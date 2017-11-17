@@ -15,6 +15,20 @@ body {
   overflow: hidden;
 }
 
+#perdu {
+  text-align: center;
+  color:red;
+  background-color: blue;
+  border:1px red solid;
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  width: 100px;
+  height: 100px;
+  margin-left: -100px; /* Cette valeur doit être la moitié négative de la valeur du width */
+  margin-top: -100px; /* Cette valeur doit être la moitié négative de la valeur du height */
+}
+
 #sprite {
   position: absolute;
 }
@@ -54,4 +68,11 @@ body {
 
 .pipe .down {
   bottom: 0;
+}
+
+#score{
+  display: inline-block;
+  position:absolute;
+  top:0;
+  left:0;
 }
